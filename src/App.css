@@ -1,39 +1,84 @@
-.App {
-  text-align: center;
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+  font-size: 62.5%;
+  font-size: calc(60% + 0.8vmin);
+  scroll-behavior: smooth;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+#calculator-placeholder {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 20vh;
 }
 
-.App-link {
-  color: #61dafb;
+#calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+#calculator :nth-child(18) {
+  grid-column: span 2;
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+#calculator :nth-child(5),
+#calculator :nth-child(9),
+#calculator :nth-child(13),
+#calculator :nth-child(17),
+#calculator :nth-child(20) {
+  background-color: orange;
+}
+
+#calculator :nth-child(5):hover {
+  background-color: rgb(255, 195, 85);
+}
+
+#input {
+  grid-column: span 4;
+  padding: 1rem;
+  background-color: rgb(180, 180, 180);
+  text-align: right;
+}
+
+.btn {
+  padding: 1rem;
+  border: 1px solid rgb(170, 170, 170);
+}
+
+.btn:hover {
+  background-color: aliceblue;
 }
