@@ -37,7 +37,7 @@ p {
   font-size: 1.2rem;
 }
 
-#calculator-placeholder {
+.calculator-placeholder {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,29 +45,29 @@ p {
   margin-top: 20vh;
 }
 
-#calculator {
+.calculator {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 50%;
 }
 
-#calculator :nth-child(18) {
+.calculator :nth-child(18) {
   grid-column: span 2;
 }
 
-#calculator :nth-child(5),
-#calculator :nth-child(9),
-#calculator :nth-child(13),
-#calculator :nth-child(17),
-#calculator :nth-child(20) {
+.calculator :nth-child(5),
+.calculator :nth-child(9),
+.calculator :nth-child(13),
+.calculator :nth-child(17),
+.calculator :nth-child(20) {
   background-color: orange;
 }
 
-#calculator :nth-child(5):hover {
+.calculator :nth-child(5):hover {
   background-color: rgb(255, 195, 85);
 }
 
-#input {
+.input {
   grid-column: span 4;
   padding: 1rem;
   background-color: rgb(180, 180, 180);

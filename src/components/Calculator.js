@@ -1,13 +1,14 @@
 /* eslint-disable react/prefer-stateless-function */
+
 import React from 'react';
 
 class Calculator extends React.Component {
   render() {
     return (
-      <div id="calculator-placeholder">
+      <div id="calculator-placeholder" className="calculator-placeholder">
         <h1>Tito&apos; Calculator</h1>
-        <div id="calculator">
-          <input type="text" name="input" className="btn" id="input" />
+        <div id="calculator" className="calculator">
+          <input type="text" name="input" className="btn input" id="input" />
           <input type="button" className="btn" value="AC" />
           <input type="button" className="btn" value="+/-" />
           <input type="button" className="btn" value="%" />
