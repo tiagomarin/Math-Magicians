@@ -63,7 +63,11 @@ p {
   background-color: orange;
 }
 
-.calculator :nth-child(5):hover {
+.calculator :nth-child(5):hover,
+.calculator :nth-child(9):hover,
+.calculator :nth-child(13):hover,
+.calculator :nth-child(17):hover,
+.calculator :nth-child(20):hover {
   background-color: rgb(255, 195, 85);
 }
 
@@ -81,4 +85,8 @@ p {
 
 .btn:hover {
   background-color: aliceblue;
+}
+
+.input:hover {
+  background-color: rgb(202, 202, 202);
 }
