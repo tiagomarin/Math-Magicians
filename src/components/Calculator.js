@@ -12,36 +12,58 @@ class Calculator extends React.Component {
   }
 
   onClickHandler = (e) => {
-    const result = calculate(this.state, e.target.value);
+    const result = calculate(this.state, e.target.innerText);
     this.setState(result);
   };
 
   render() {
-    const { total, next } = this.state;
+    const { total, next, operation } = this.state;
+
+    const display = () => {
+      if (!total && !next && operation) {
+        return `${total} ${operation}`;
+      }
+      if (total && next && operation) {
+        return `${total} ${operation} ${next}`;
+      }
+      if (total && operation) {
+        return `${total} ${operation}`;
+      }
+      if (next) {
+        return next;
+      }
+      if (total) {
+        return total;
+      }
+      return 0;
+    };
+
     return (
       <div id="calculator-placeholder" className="calculator-placeholder">
-        <h1>Tito&apos; Calculator</h1>
-        <div id="calculator" className="calculator">
-          <input type="text" name="input" className="btn input" id="input" value={next || total} />
-          <input onClick={this.onClickHandler} type="button" className="btn" value="AC" />
-          <input onClick={this.onClickHandler} type="button" className="btn" value="+/-" />
-          <input onClick={this.onClickHandler} type="button" className="btn" value="%" />
-          <input onClick={this.onClickHandler} type="button" className="btn" value="÷" />
-          <input onClick={this.onClickHandler} type="button" className="btn" value="7" />
-          <input onClick={this.onClickHandler} type="button" className="btn" value="8" />
-          <input onClick={this.onClickHandler} type="button" className="btn" value="9" />
-          <input onClick={this.onClickHandler} type="button" className="btn" value="x" />
-          <input onClick={this.onClickHandler} type="button" className="btn" value="4" />
-          <input onClick={this.onClickHandler} type="button" className="btn" value="5" />
-          <input onClick={this.onClickHandler} type="button" className="btn" value="6" />
-          <input onClick={this.onClickHandler} type="button" className="btn" value="-" />
-          <input onClick={this.onClickHandler} type="button" className="btn" value="1" />
-          <input onClick={this.onClickHandler} type="button" className="btn" value="2" />
-          <input onClick={this.onClickHandler} type="button" className="btn" value="3" />
-          <input onClick={this.onClickHandler} type="button" className="btn" value="+" />
-          <input onClick={this.onClickHandler} type="button" className="btn" value="0" />
-          <input onClick={this.onClickHandler} type="button" className="btn" value="." />
-          <input onClick={this.onClickHandler} type="button" className="btn" value="=" />
+        <h2 className="calc-title">Tito&apos; Calculator</h2>
+        <div className="calculator-body">
+          <div id="calculator" className="calculator">
+            <div name="display" className="display" id="display">{display()}</div>
+            <div className="btn"><button type="button" onClick={this.onClickHandler} className="btn-front">AC</button></div>
+            <div className="btn"><button type="button" onClick={this.onClickHandler} className="btn-front">+/-</button></div>
+            <div className="btn"><button type="button" onClick={this.onClickHandler} className="btn-front">%</button></div>
+            <div className="btn"><button type="button" onClick={this.onClickHandler} className="btn-front">÷</button></div>
+            <div className="btn"><button type="button" onClick={this.onClickHandler} className="btn-front">7</button></div>
+            <div className="btn"><button type="button" onClick={this.onClickHandler} className="btn-front">8</button></div>
+            <div className="btn"><button type="button" onClick={this.onClickHandler} className="btn-front">9</button></div>
+            <div className="btn"><button type="button" onClick={this.onClickHandler} className="btn-front">x</button></div>
+            <div className="btn"><button type="button" onClick={this.onClickHandler} className="btn-front">4</button></div>
+            <div className="btn"><button type="button" onClick={this.onClickHandler} className="btn-front">5</button></div>
+            <div className="btn"><button type="button" onClick={this.onClickHandler} className="btn-front">6</button></div>
+            <div className="btn"><button type="button" onClick={this.onClickHandler} className="btn-front">-</button></div>
+            <div className="btn"><button type="button" onClick={this.onClickHandler} className="btn-front">1</button></div>
+            <div className="btn"><button type="button" onClick={this.onClickHandler} className="btn-front">2</button></div>
+            <div className="btn"><button type="button" onClick={this.onClickHandler} className="btn-front">3</button></div>
+            <div className="btn"><button type="button" onClick={this.onClickHandler} className="btn-front">+</button></div>
+            <div className="btn"><button type="button" onClick={this.onClickHandler} className="btn-front">0</button></div>
+            <div className="btn"><button type="button" onClick={this.onClickHandler} className="btn-front">.</button></div>
+            <div className="btn"><button type="button" onClick={this.onClickHandler} className="btn-front">=</button></div>
+          </div>
         </div>
       </div>
     );
