@@ -77,8 +77,50 @@ p {
   transform: translate(10px, 5px);
 }
 
+.display {
+  grid-column: span 4;
+  padding: 1rem;
+  background-color: rgb(91, 91, 91);
+  text-align: right;
+  border-radius: 12px;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  box-shadow: 0 0 8px 4px rgb(71, 71, 71) inset;
+}
+
 .calculator :nth-child(18) {
   grid-column: span 2;
+}
+
+/* other buttons */
+.btn {
+  background: rgb(190, 190, 190);
+  border-radius: 12px;
+  cursor: pointer;
+  outline-offset: 4px;
+  box-shadow: 0 0 8px 4px rgb(212, 212, 212);
+}
+
+.btn-front {
+  width: 100%;
+  display: block;
+  padding: 12px 0;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  background: rgb(220, 220, 220);
+  transform: translate(3px, 5px);
+  box-shadow: 0 0 8px 4px rgb(190, 190, 190) inset;
+}
+
+.btn-front:hover {
+  background: rgb(230, 230, 230);
+}
+
+.btn:active .btn-front {
+  transform: translate(0);
 }
 
 /* buttons on the right */
@@ -105,47 +147,4 @@ p {
 .calculator :nth-child(17) .btn-front:hover,
 .calculator :nth-child(20) .btn-front:hover {
   background-color: rgb(255, 195, 85);
-}
-
-.display {
-  grid-column: span 4;
-  padding: 1rem;
-  background-color: rgb(91, 91, 91);
-  text-align: right;
-  border-radius: 12px;
-  color: whitesmoke;
-  font-weight: bold;
-  font-size: 1.6rem;
-  line-height: 2rem;
-  box-shadow: 0 0 8px 4px rgb(71, 71, 71) inset
-}
-
-/* other buttons */
-.btn {
-  background: rgb(190, 190, 190);
-  border-radius: 12px;
-  cursor: pointer;
-  outline-offset: 4px;
-  box-shadow: 0 0 8px 4px rgb(212, 212, 212);
-}
-
-.btn-front {
-  width: 100%;
-  display: block;
-  padding: 12px 0px;
-  border: none;
-  border-radius: 12px;
-  font-size: 1.25rem;
-  background: rgb(220, 220, 220);
-  transform: translate(3px, 5px);
-  box-shadow: 0 0 8px 4px rgb(190, 190, 190) inset;
-}
-
-.btn:active .btn-front {
-  /* transition: transform 50ms; */
-  transform: translate(0px);
-}
-
-.btn-front:hover {
-  background: rgb(230, 230, 230);
 }
