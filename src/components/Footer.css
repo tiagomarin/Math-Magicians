@@ -1,0 +1,17 @@
+.footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  width: 100%;
+}
+
+.footer > img {
+  height: 2rem;
+}
+
+.footer > p {
+  font-size: 0.8rem;
+}

@@ -1,8 +1,11 @@
 import React from 'react';
-import './App.css';
 import { Route, Routes } from 'react-router-dom';
+import NavBar from './components/NavBar';
 import HomePage from './pages/Home';
-import CalculatorPage from './pages/Calculator';
+import CalculatorPage from './pages/CalculatorPage';
+import QuotePage from './pages/Quote';
+import Footer from './components/Footer';
+import './App.css';
 
 class App extends React.Component {
   constructor(props) {
@@ -12,14 +15,15 @@ class App extends React.Component {
 
   render() {
     return (
-      <>
-        {/* <NavBar /> */}
+      <main>
+        <NavBar />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="calculator" element={<CalculatorPage />} />
-          {/* <Route path="quote" element={<QuotePage />} /> */}
+          <Route path="quote" element={<QuotePage />} />
         </Routes>
-      </>
+        <Footer />
+      </main>
     );
   }
 }

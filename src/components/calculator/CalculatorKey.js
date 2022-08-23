@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './CalculatorKey.css';
 
 const CalculatorKey = (props) => {
   const { btnText, keyClickHandler } = props;

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+.quote-page {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0;
+  align-items: center;
+  gap: 4rem;
+}
+
+.quote-page > * {
+  width: 80%;
+}
+
+.quote-page > h2,
+.quote-page > h3,
+.quote-page > p {
+  font-family: 'Fredoka One', cursive;
+  font-weight: normal;
+}
+
+.quote-page > h2 {
+  font-size: 4rem;
+}
+
+.quote-page > h3 {
+  font-size: 2.5rem;
+}
+
+.quote-page > p {
+  font-size: 2rem;
+}
+
+.btn.refresh {
+  border: none;
+  width: max-content;
+  align-self: flex-start;
+  margin-left: 10%;
+  padding: 0.4rem 0.8rem;
+}

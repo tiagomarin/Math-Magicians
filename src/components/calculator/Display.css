@@ -1,0 +1,12 @@
+.display {
+  grid-column: span 4;
+  padding: 1rem;
+  background-color: rgb(91, 91, 91);
+  text-align: right;
+  border-radius: 12px;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  box-shadow: 0 0 8px 4px rgb(71, 71, 71) inset;
+}

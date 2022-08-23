@@ -1,0 +1,57 @@
+.btn {
+  background: var(--btn-palceholder);
+  border-radius: 12px;
+  cursor: pointer;
+  outline-offset: 4px;
+}
+
+.btn-front {
+  width: 100%;
+  display: block;
+  padding: 12px 0;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.8rem;
+  background: var(--btn);
+  transform: translate(4px, 3px);
+  box-shadow: 0 0 8px 4px var(--btn-shaddow) inset;
+}
+
+.btn-front:hover {
+  background: rgb(230, 230, 230);
+}
+
+.btn:active .btn-front {
+  transform: translate(3px, 2px);
+}
+
+/* button 0 (zero) */
+.calculator :nth-child(19) {
+  grid-column: span 2;
+}
+
+/* buttons on the right */
+.calculator :nth-child(6),
+.calculator :nth-child(10),
+.calculator :nth-child(14),
+.calculator :nth-child(18),
+.calculator :nth-child(21) {
+  background-color: rgb(226, 147, 0);
+}
+
+.calculator :nth-child(6) .btn-front,
+.calculator :nth-child(10) .btn-front,
+.calculator :nth-child(14) .btn-front,
+.calculator :nth-child(18) .btn-front,
+.calculator :nth-child(21) .btn-front {
+  background-color: rgb(255, 182, 48);
+  box-shadow: 0 0 8px 4px rgb(226, 147, 0) inset;
+}
+
+.calculator :nth-child(6) .btn-front:hover,
+.calculator :nth-child(10) .btn-front:hover,
+.calculator :nth-child(14) .btn-front:hover,
+.calculator :nth-child(18) .btn-front:hover,
+.calculator :nth-child(21) .btn-front:hover {
+  background-color: rgb(255, 195, 85);
+}
