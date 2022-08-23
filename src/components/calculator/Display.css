@@ -10,3 +10,9 @@
   line-height: 2rem;
   box-shadow: 0 0 8px 4px rgb(71, 71, 71) inset;
 }
+
+.display.off {
+  background-color: rgb(71, 71, 71);
+  box-shadow: 0 0 8px 4px rgb(91, 91, 91) inset;
+  color: transparent;
+}

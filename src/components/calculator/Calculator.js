@@ -18,8 +18,16 @@ const Calculator = () => {
 
   const { total, next, operation } = state;
 
+  const toggleDisplay = () => {
+    const display = document.querySelector('.display');
+    display.classList.toggle('off');
+  };
+
   const keyClickHandler = (e) => {
-    setState(calculate(state, e.target.innerText));
+    const display = document.querySelector('.display');
+    if (!display.classList.contains('off')) {
+      setState(calculate(state, e.target.innerText));
+    }
   };
 
   return (
@@ -29,7 +37,7 @@ const Calculator = () => {
         <div className="calculator-body">
           <div id="calculator" className="calculator">
             <div className="top">
-              <OnOff />
+              <OnOff toggleDisplay={toggleDisplay} />
               <h2 className="calc-title" title="Tito&apos;s Calculator">
                 Tito&apos;s
                 <br />

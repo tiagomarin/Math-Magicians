@@ -17,15 +17,11 @@ const HomePage = () => (
     </p>
     <p>
       Use the navigation bar at the top of the page to use the calculator
-      or to jump to the quote section. If you prefer, you can click on the images below!
+      or to jump to the quote section.
     </p>
     <p>
       <span>Have fun!</span>
     </p>
-    <div className="links-images">
-      <a href="/calculator"> Calculator </a>
-      <a href="/quote"> Quote </a>
-    </div>
   </div>
 );
 

@@ -25,7 +25,7 @@ const Display = (props) => {
   };
 
   return (
-    <div name="display" className="display" id="display">{showUpdateDisplay()}</div>
+    <div name="display" className="display off" id="display">{showUpdateDisplay()}</div>
   );
 };
 
