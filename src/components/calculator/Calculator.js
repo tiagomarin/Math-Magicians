@@ -21,6 +21,7 @@ const Calculator = () => {
   const toggleDisplay = () => {
     const display = document.querySelector('.display');
     display.classList.toggle('off');
+    setState(calculate(state, 'AC'));
   };
 
   const keyClickHandler = (e) => {

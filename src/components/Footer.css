@@ -1,5 +1,5 @@
 .footer {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(30, 30, 30, 0.8);
   height: 3rem;
   display: flex;
   justify-content: center;
@@ -8,10 +8,10 @@
   width: 100%;
 }
 
-.footer > img {
+.footer>img {
   height: 2rem;
 }
 
-.footer > p {
+.footer>p {
   font-size: 0.8rem;
 }

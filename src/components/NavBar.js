@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './NavBar.css';
 import logo from '../assets/icon.webp';
 
@@ -9,9 +10,9 @@ const NavBar = () => (
       Math Magicians
     </p>
     <ul className="links-nav">
-      <li><a href="/"> Home </a></li>
-      <li><a href="/calculator"> Calculator </a></li>
-      <li><a href="/quote"> Quote </a></li>
+      <li><Link to="/"> Home </Link></li>
+      <li><Link to="/calculator"> Calculator </Link></li>
+      <li><Link to="/quote"> Quote </Link></li>
     </ul>
   </nav>
 );

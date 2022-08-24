@@ -1,6 +1,6 @@
 .tilte-calc-page {
   text-align: center;
-  font-size: 4rem;
+  font-size: 3.4rem;
   font-weight: 300;
 }
 
@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding-top: 6rem;
   margin: auto;
   width: 70%;
@@ -22,6 +23,7 @@
   background-color: var(--calc-shadow);
   border-radius: 18px;
   max-width: 50rem;
+  width: 100%;
 }
 
 .calculator {
@@ -76,6 +78,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .tilte-calc-page {
+    font-size: 4rem;
+  }
+
   .calculator-placeholder {
     width: 40%;
   }
