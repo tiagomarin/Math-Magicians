@@ -1,0 +1,14 @@
+.btn.onOff {
+  background-color: rgba(158, 24, 24, 0.8);
+}
+
+.btn-front.onOff {
+  font-size: 1rem;
+  padding: 1rem;
+  background-color: rgba(231, 109, 109, 0.8);
+  box-shadow: 0 0 8px 4px rgba(163, 42, 42, 0.8) inset;
+}
+
+.btn-front.onOff:hover {
+  background: rgba(238, 127, 127, 0.8);
+}

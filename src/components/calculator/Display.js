@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Display.css';
 
 const Display = (props) => {
   const { total, next, operation } = props;
@@ -24,7 +25,7 @@ const Display = (props) => {
   };
 
   return (
-    <div name="display" className="display" id="display">{showUpdateDisplay()}</div>
+    <div name="display" className="display off" id="display">{showUpdateDisplay()}</div>
   );
 };
 

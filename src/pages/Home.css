@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Inlander Texture';
+  src: local('Inlander Texture'), url(../assets/fonts/Inlander-Texture.ttf) format('TrueType');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+.homepage {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0;
+  align-items: center;
+  gap: 3rem;
+}
+
+.homepage > * {
+  width: 80%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+p {
+  font-size: 2rem;
+  text-align: justify;
+  font-family: 'Fredoka One', cursive;
+}
+
+p > span {
+  color: orange;
+}
+
+@media screen and (min-width: 768px) {
+  .homepage > * {
+    width: 60%;
+  }
+}
